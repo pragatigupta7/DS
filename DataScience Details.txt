@@ -545,12 +545,132 @@ plt.tight_layout()# To Avoid Overlapping of Chart Title
  
 
 Box plot,Heatmap,Hist -Check outliers in data
+                        29-10-24(Day 14)
+
+                               # 3RRR(Replace -Remove-Retain)-Null Values
+Replace (Less Data) 
+Numerical  mean Median (Capping)
+Text    mode 
+Remove (More Data-remove Row Remore Column
+Retain  keep outliers Bank Hospital 
+
+Transformation(0,1)
+Dummy Variable 
+One hot encoder
+-1..........0.................+1
+High       Low               High
+
+Graded interpretation : 
+r 0.1-0.3 = weak
+0.4-0.7 = moderate
+0.8-1.0=strong correlation
+
+Transformation
+EDA Steps
+1 Import Libraries
+2 Load Data
+3 Data Understanding 
+  -Duplicate
+  -Shape 
+  -Missing Value
+  -Datatype
+  -Describe
+  -Outliers
+4 Descriptive Statistics 
+5 Visualization
+  Boxplot,Histogarm,Scatter Chart-Outliers
+6 Treat outliers and Null Values
+7 Convert Object to int
+  get_dummies 
+8 Correlation  Heat map
+9 Normalization [0 ,1]
+  Standardize data (0 mean, 1 stdev)
+MinMax Scalar (Min=0,Max=1)
+#!pip install scikit-learn    First time
+# 1 Reposatory -Anaconda 
+# 2 Library-Sklearn 
+# 3 Module-preprocessing 
+# 4 Classes StandardScaler,MinMaxScaler
+
+                            30-10-24(Day 15)
+Hypothesis Testing
+
+Define Hypothesis
+1 H0 >Value Ha <value True False  
+2 Z test
+3 2 Tail
+4 alpha=0.05
+5 p value  1.96/2  0.98
+6 Average weight of People in city A is 72 because P value is greater than alpha
+
+          Z Test                                t Test 
+Population SD is Given                    Population SD is not Given 
+
+ 1 Sample                               1 Tailed  > < >= <= 
+ 2 Sample                               2 Tailed = not equal to 
+                            04-11-24(Day16)
 
 
+1 sample
+a-T test   b- Proportion test
+2 Sample
+a-T test   b- Proportion test
+3 Anova
+Sample T1 T2 T3 T4....
+4 Chi Test 
+5 Regression
+1 Sample t test
+
+from scipy.stats import ttest_1samp
+#tscore,pvalue =ttest_1samp(data, population mean)
+
+2 sample t test
+from scipy.stats import ttest_ind  (2 sample)
+
+## Paired t test(dependent)
+
+from scipy.stats import ttest_rel
+
+                      05-11-24(Day 17)
+Machine Learning (Future)
+In  order to make the statement about Future
+Model -Set of Algorithoms
+                              Machine Learning
+     Supervised                                                                     Unsupervised  
+    (Specified O/P)                                                               (No specified O/P)
+1 Regression                                            2 Classification
+(Y is Continuous)                                         (Y is Discrete)
+Linear Regression                                         Logistic Regression
+a Simple Linear Regression(SLR) Y=mX+c Straight Line  a Simple Logistic Regression Y=BX+E
+b Multi linear Regression(MLR) Y=m1X1+m2X2.......+c   b Multi Logistic Regression  Y=B1X1+B2X2.....+E
 
 
+ Assumption(Parametric Model )
+1 The data need to be Linear Proportion 
+  x directly Y  Proportion 
+  X inversely Y  Proportion 
+(Scatter Chart, Correlation)
+2  Homo Scarcity (Similar Variance)
+3  NO Multicollinearity(Same Column information Should not be there) drop dependent Column
+Ex  Weight in kg Weight in gm  -Drop any one Column
+4 No auto regress (O/p should  not change with time)
+5 Zero residual Mean
+6 Continuous 1 I/P 1 O/P
+Training Data
 
+Known parameter       X Y 
+Unknown Parameter     M C 
+Y=mx+C
 
+Data Prediction 
+
+Known parameter      m c x
+Unknown Parameter     Y 
+Y=mx+C
+
+ Assumption-(Parametric Model )-Supervised Machine Learning -Regression  ,Classification
+
+ No Assumption-( Non Parametric Model )-UnSupervised Machine Learning -Clustering
 
 
 
