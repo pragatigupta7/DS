@@ -672,7 +672,12 @@ Y=mx+C
 
  No Assumption-( Non Parametric Model )-UnSupervised Machine Learning -Clustering
 
-
+                             06-11-24(Day 18)
+Simple Linear Regression for
+1  Newspaper data  Sunday Vs Daily
+2  Waist Circumference Vs Adipose Tissue Data 
+Ref Python File Simple Linear Regression 
+& SLR_ATWC
 
 
 
