@@ -678,6 +678,85 @@ Simple Linear Regression for
 2  Waist Circumference Vs Adipose Tissue Data 
 Ref Python File Simple Linear Regression 
 & SLR_ATWC
+                              07-11-24(Day23)
+MLR Ref Python file
+                              08-11-24(Day24)
+    Machine Learning
+         |
+Supervied Machine Learning 
+         |
+Classification(Discrete)
+         |
+Logistic Regression 
+ 
+
+Confusion Matrix
+                        Actual Value
+                        P        N
+Predicted Value   T    TP       TN
+                
+                  F    FP       FN
+Recall/Sensitivity =TP/ TP+FN
+Precision =TP/  TP+FP
+Specificity =TN/  TN+FN
+F Score   = 2*Recall*Precision /Recall+Precision 
+Assumption
+1 O/p is Discrete
+
+                            11-11-24(Day25)
+Clustering (Unspervised Machine Learning)
+1 Hierarchical 
+2 K Mean
+3 DBSCAN
+Hierarchical Clustering  
+-small Data,find the Number of Clusters
+-Agglomerative Clustering  
+-dendrogram
+Distance between Clusters
+1 Single Linkage(Nearest Neighbour)
+2 Complete Linkage(Farthest Neighbour)
+3 Average Linkage(avearage of all the distance between members of both the cluster)
+4 Centroid Linkage
+Euclidean Distance 
+The Euclidean distance formula says:
+d = √[ (x2– x1)2 + (y2– y1)2]               
+
+
+
+                            12-11-24(Day25)
+Python Code for Hierchical ,Kmean Clustering
+K mean Clustering
+-Elbow Curve We will deside K Value
+Range 1 -11
+Mean of Each cluster is Calculated 
+
+                           13-11-24(Day26)
+DBSCAN-Outlaiers Detection 
+Density-Based Spatial Clustering of Applications with Noise
+1 Epsilon(radius of Circle)
+2 Minimum Sample =3
+3 Core Point  Centre of Circle
+4 Border Point   Points on Radius
+5 Noise Point  Outlaiers
+-No need to decide No of Cluster
+-Randaom Shape
+-Handle the Data with outlaiers
+Difference Between Kmean DBSCAN
+                            KMean               DBSCAN
+1 Cluster Shape        Spherical,Convex         Random/Arbitory Shape
+2 No of Cluster        Specified by K           Not Specified
+3 Dataset              Large Data               Small Data
+4 Outlaiers            No                       Yes
+5 Parameter            K Value                  Epsilon,Min_Points=3 
+
+
+
+
+
+
+
+
+
 
 
 
