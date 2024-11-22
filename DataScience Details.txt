@@ -748,11 +748,99 @@ Difference Between Kmean DBSCAN
 3 Dataset              Large Data               Small Data
 4 Outlaiers            No                       Yes
 5 Parameter            K Value                  Epsilon,Min_Points=3 
+                    14-11-24(Day27)
+Association Rule 
+Lift ratio shows how effective the rule is in finding consequents vs. random (useful if finding particular consequents is important)
+Lift ratio= confidence/(benchmark confidence)
+
+Benchmark assumes independence between antecedent and consequence:
+
+P(antecedent & consequent) = P(antecedent) x P(consequent)
+Benchmark confidence:
+P(C|A) = P(C&A) / P(A) = P(C) x P(A) / P(A) = P(C)
+=
+# transactions with consequent item sets
+# transactions in database
+
+Confidence shows the rate at which consequents will be found (useful in learning costs of promotion)
+
+Support measures overall impact (% transactions affected)
+antecedent - consequent(Support,Confidence)
+O/p        I/P(Support,Confidence)
+
+* !pip install  mlxtend-Only one time 
+From mlxtend import.frequent_patterns import apriori,association_rules
+from mlxtend.preprocessing import TransactionEncoder
+                      15-11-24(Day 28)
+Recommendation System
+1 Collabrative    Recommendation  Two user with same Similarity Score 
+2 Content Based  Recommendation  One User with same Author Recommendation 
+Cosine Similaries Cos9A,B)=A.B/|A|*|B|
+High Similarity Score highly Recommended
+Low Similarity  Score Less recommended 
+Code Refer Recommendation File 
+                      18-11-24(Day 29)
+EDA 2
+Encoding Texhniques 
+1 Onehot Encoder 
+2 Label Encoder
+3 Get Dummies
+If the target column is categoric, we use the sklearn.LabelEncoder​ sort in A-Z  1column All the Unique code in Single Column
+If the feature column is categoric, we use the sklearn.OneHotEncoder    Depends on no of features  in categoric column(n feature =n Column)-Continuous O/P
+Get Dummies-Convert Categorical column to Dummy Variables 
+Ex Male 1 Female 0 O/p is in the Form of 0 and 1 
 
 
+Isolation Forest for outlier Detection Unsurvised Learning  anamoaly Score
+
+                                     19-11-24(Day30)
+Decision Tree (Classifier & Regrssion)
+ 1 C5.0  Classifier O/p is Categorical Entropy Informaion Gain
+2 Cart Regression )/p is Numerical  Gini  Root Mean Square Value 
+Main/Root Node -Decision Node- Leaf node 
+information Gain=Entropy(S1)-Entropy(S2) S1 -Actual S2 -Predicted
+information Gain=Entropy(before)-Entropy(after)
+Entropy=summation -Pi (log2 Pi)
+Criteria =gini  CART Regressor 
+Criteria=entropy  C5.0 Classifier
+
+                      21-11-24(Day31)
+Random Forest
+1  Classifier O/p -Categorical
+2 Regressor  o/p   Numerical
 
 
+Feature Selection 
+RFE(Recursive Feature Elimination)-reduce Column/Feature
+More Accuracy
+Curse of Dimensionality 
+Less Time 
+low Computational Cost
 
+N +1 Model created
+
+
+X1 X2 X3 X4 Y   acc 90
+x1 X2 X3 Y   Acc 80
+xi X2 X4      Axc 60
+x2 X3 X4     Acc 70
+
+Tree Based Method 
+Entropy -Information Gain
+Gini 
+
+                      
+Model Validation Technique
+Train  Text Split 
+20 test 80 train
+
+Kfold
+average of all fold 
+Leave one out (small dataset like till 1000records )
+
+0 or 100% accuracy 
+
+Grid Search CV K=5
 
 
 

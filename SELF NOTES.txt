@@ -1,0 +1,16 @@
+17/10/2024- thrusday DS
+
+Prescriptive analysis 
+
+scatter chart to find the relationship between the data
+boxplot-outlier detection (out of range distribution)
+line chart-to see the analysis of data in which tym is given .like year month 
+pie chart-%contribution of data in the form of angle.
+HIST
+Bar
+
+Descriptive analysis
+mean median mode skewness kurtosis
+
+
+
