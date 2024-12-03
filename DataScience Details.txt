@@ -382,8 +382,8 @@ Libraries in Python
 Set of Function
 1 Pandas -For data manipulations(Read write,Shape ,Info,datatypes,index,Group by,Sorting ,Column..)
 2 NumPy  -For  numeric Operation(Max,Min,Total,Varience,Standard deviation)
-3 Matplotlib -data visualization
-4 Seaborn visualization
+3 Matplotlib -data visualization Customize 
+4 Seaborn Beautiful visualization 
 5 Sklearn -Machine learning Models
 6 Tenserflow-image and Video processing
 7 Keras image and Video processing
@@ -841,6 +841,127 @@ Leave one out (small dataset like till 1000records )
 0 or 100% accuracy 
 
 Grid Search CV K=5
+                                 22-11-24(Day 32)
+
+
+Ensemble Techniques(Learner -Models)
+Take multiple weak learner to make one strong learner
+
+1 Bagging 
+  2 Homogenous weak Learner 
+M1 M2 M3 same Algorithem Like Desicion Tree Regressor
+independent to each other
+2 Boosting 
+1best Approach learn Sequentialy
+depends on  each other
+M1 M2 M3 same Algorithem Like Desicion Tree Regressor
+Homogenous weak Learner
+3 Stacking 
+Hetrogenious weak Learner (Differnt Algorithem)
+M1 M2 M3 All independent different learner
+Bagging
+Random Forest (multiple Decision Tree)
+n estimators -100 /150 -hyperpameter -no of desicion Tree depends on no of Column
+-- Base Algorithem is Desicion Tree
+--Random Forest is the most common Algorithem
+
+Bootstamp Aggregation (67 % ramdomly data selection for each model)
+Sampling without replacement delete after selection 
+Sampling with replacement    not deleting 
+Row Sampling 
+Feature Sampling
+Regresion -Average
+Classification 
+--no of feature for each decision tree =squareroot N 
+Where N is total no of Column 
+Decision Tree prone overfitting
+Randomforest Row &  feature sampling 
+No need to replace automatical replace with mode for Text and Mean for number
+
+Gradient Boosting
+-Used for Regression and Classification 
+-Sequential Model
+-Base model is Decision Tree
+-M1 M2 M3 Sequential Algorithm Mi is Average given to 2 -3.....
+-Residual/Error  is target Column for M2 
+                   25-11-24(Day 33)
+Feature Selection 
+PCA -(Principle Component Analysis)
+Reduce the Dimension
+
+Overfitting 
+Training acccuracy More Testing Less 
+Low Bias High Varience 
+Underfitting
+Training acccuracy low Testing more 
+High  Bias Low Varience 
+Accurate Model 
+Low Bias Low Varience 
+Training Accuraccy =~ Test Accuracy
+                          27-11-24(Day 34)
+SVM(Support Vector Machine)-Boost the Accuracy
+Despite the fact, that SVC works like magic when it comes to classification,still the accuracy is very bad and the model is overfitted.
+The reason is not performing feature scaling before model.
+As there is distance calculation involved in svc, Scaling is mandatory step!
+
+                          28-11-24(Day 35)
+Deep Learning  (Tenserflow Keras )
+!pip install tenserflow 
+!pip install keras
+AL -Mimic like  human Brain/Robot
+ML -Training Data-Prediction -Structured Data 
+DL- Mimic Human Brain- Unstructured Data 
+Supervised Learning 
+1 Temoral Lobe- Data Preprocessing  ANN-Artificial Neural Network
+2 Occipital Lobe -CNN(Convolutional Neural  Network)-Image /Video
+3 Frontal Lobe -RNN(Recurrent Neural Network)-Text Data -NLP Natural Language Processing
+4 Maxima Minima 
+Momentum 
+
+Types of activation functions(Fx)
+
+1 Sigmoid activation: A smooth, continuously differentiable function historically important in neural network development.
+2 Tanh (Hyperbolic Tangent) Activation: Defined as the hyperbolic tangent of the input.
+3 ReLU (Rectified Linear Unit) Activation: Outputs the input if it is positive, otherwise outputs zero.
+4 Softmax activation: Used for multi-class classification problems
+
+types of activation functions include:
+Sigmoid activation: A smooth, continuously differentiable function historically important in neural network development.(1,0)
+Tanh (Hyperbolic Tangent) Activation: Defined as the hyperbolic tangent of the input.(1,-1)
+ReLU (Rectified Linear Unit) Activation: Outputs the input if it is positive, otherwise outputs zero. not for negative-Hidden layer Relu Function is Used 
+
+Softmax activation: Used for multi-class classification problems (0,1,--) A B C D E
+Sigmoid and Tanh for binary
+Softmax and multiclass for probability
+                29-11-24(Day 36)
+gradient descent Method
+
+Batch gradient descent: Use all m examples in each iteration
+Stochastic gradient descent: Use 1 example in each iteration
+Mini-batch gradient descent: Use b examples in each iteration
+                     CNN(Classification)
+
+A Convolutional Neural Network (CNN) is a type of Deep Learning neural network architecture commonly used in Computer Vision.
+Convolutional Layers: i/p
+polling Layers  hidden layer
+Fully Connected Layers:  O/p
+
+
+Optimization
+Slope =Ay-By/Ax-Bx   
+Maxima Max=0 Min =infinite
+Minima Max=infinite Min =0
+
+
+
+
+
+
+
+
+
+
+
 
 
 

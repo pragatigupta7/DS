@@ -1,0 +1,941 @@
+                               
+                                        09-10-24(Day1)
+Basic Statistics
+R Programing
+Basic Python
+Machine Learning
+Deep Learning
+Artificial Intelligence
+Deployment
+
+Data Science -Branch of Science deals  with Statistics, Computing, Processing, Visualization, Algorithms to find insights from  Data .
+Types of Analysis 
+  Who                        Grabbing Pattern         Taking Decision           Take Action
+1 Descriptive(DA)                   Human                    Human                 Human         
+2 Predictive(DS)                    Machine                 Machine                Human
+3 Prescriptive Analysis(AI)         Machine                 Machine                Machine
+
+Life Cycle of DS
+1 Business Understanding
+2 Data Mining
+3 Data Cleaning(ETL)
+4 Data Exploration(EDA)
+5 Future Engineering
+6 Predictive Modelling
+7 Data Visualization
+Definition Statistics
+In order to make statement about present Data 
+Types of Statistics 
+1 Descriptive   Visualization Charts
+2 Inferential    Values   Z Text t Text
+
+
+Statistics is the science of data.  It involves 
+collecting, 
+classifying, 
+summarizing, 
+analyzing,
+and interpreting numerical information.
+Sum Average Max Min Count CountDistinct
+ 
+
+Statistics is used in several different disciplines (both scientific
+and non-scientific) to make decisions and draw conclusions based on data.
+
+
+Data Types
+Nominal -Text Name, City, Product....
+Ordinal-Text GDP, Rank, Rating
+Interval -Number No Meaningful 0  Height, Weight
+Ratio-Number PH, Temp
+Continuous Value With Decimal
+Discrete   Without Decimal
+
+* Measure of Central of Tendency
+1 Mean    Average
+2 Median    Middle for Odd / Average of Middle 2 value for even
+3 Mode      Most occurring Value (Text)
+Measure of Dispersion
+Variance   S^2=Summation (X-X1(Mean)^2/N-1 Where N is no of Data Points
+Standard Deviation   Square root of Variance 
+Range    Max-Min
+
+Normal Distribution 
+Mean=Median 
+Sample -Few records from Population /Subset of Population
+Population -Entire Data
+                                 10-10-24(Day2)
+* Measure of Dispersion
+- Skewness
+- Kurtosis
+
+Skewness
+Range     -1  +1  High Skewness -0.95  .99
+         -.5 +.5 Moderate Skewness   -4
+               0    Normal Distribution (No outliers)
+Kurtosis  -3  +3   High 
+           -1   +1  Moderate 
+               0    Normal Distribution (No outliers)
+               >0   More Outliers
+               <0   Less Outliers
+                Skewness                   Kurtosis
+1          Distribution of Data          Pinkness of Data
+2           X Axis                          Y Axis
+3          +(Right) ,-(Left)                         
+4          Third Order                   4th order 
+Types of Skewness
+Left (-)
+Right(+)
+No  Skewness(Normal Distribution)
+Types of Kurtosis
+1 Mesokurtic  (Normal Distribution)
+2 Leptokurtic (+)
+3 Platykurtic (-)
+
+Visualization
+Column Chart  Less Distribution(Top /Bottom)
+Histogram  -Bins Range(Frequency)Large data Converted to Bin/Band-Skewness and Kurtosis
+Box Plot -Outliers
+Heatmap-Dark(More Value)-Light(Less Value)
+Pie Chart  Less Distribution (1 Text 1 Numerical)
+Scatter Chart More Distribution of Data
+Line Chart -1  Date  1 Number  
+Relationship Between mean median
+Mean=Median     Normal Distribution
+Mean> Median +/Right Skewness
+Mean<Median  -/Left  Skewness
+
+K=0   Normal Distribution
+k>3   More Out layers
+k<3   Less Out Layers
+
+Skewness
+Symmetric   Nonsymmetric(+,-)
+
+Normal Distribution /Bell Curve/Gaussian Distribution Curve/ Empirical  Rule
+For 1st  68%  -1SD to +1SD
+For 2nd  95%  -2SD to +2SD
+for 3rd  99%  -3SD to +3SD
+
+                           14-10-24(Day3)
+
+Constant -Value does not Change Ex PH ,Pie =3.14
+Variable -Change 
+Events - 2  outcomes  Yes No
+Random Variable 
+1 Continuous Random Variable  Temp Height Speed Volume Weight Salary  
+2 Discrete  Random Variable   Coin Age Job Weather Disc  Match Profit 
+Z Score =X-Mean/SD( all values in same Scale )
+
+               CRV                        DRV
+Probability density Function        Probability Mass Function
+Normal Distribution                 Binomial Distribution
+Continuous                            Discrete
+Table                                    Graph
+Normal Distribution
+1  Bell Shape Curve 
+2 Mean=median=mode
+3 Symmetrical @ Mean
+4 Gaussian Distribution
+5 Area under Curve 1 
+6 Empirical Rule/36 rule
+7 Gain+Loss=1
+Probability 
+- it is Associated with Randomness
+- P(Y)+P(N)=1
+- Range of Probability 0-1
+Types of Probability
+
+-Continuous Probability Distribution
+-Discrete Probability Distribution
+
+Download R & Rstudio Link:
+
+https://www.r-project.org/
+https://posit.co/downloads/
+
+                              15-10-24(day4)
+
+Data cleaning Function
+upper 
+lower
+capitalize
+strip
+reverse
+len
+
+Operator
+== compare
+!= not equal to
+>  greater than
+<  less than
+%  mod
+/  quotient
+data Types
+1 Numeric   1000, 11.5,
+2 Integer  (no decimal)
+3 Complex X+iY
+4 Character   Name City Location 
+5 Logical    TRUE FALSE  
+IMP features of R Programming
+
+-- Case Sensitive 
+-- Operator    Variable = Value
+-- Comments     #
+=  <- Assignment Operator 
+--    Extension    .r
+--  Summary()
+-- Class(Name)   To see datatype
+
+Name = "Dipti"
+Salary =10000
+DOB='20-02-2024'
+Class(Name)   
+
+data()-  Inbuilt Data
+data(Sales)
+Data Structure 
+1 Homogeneous
+  Same Data type
+2 Heterogeneous
+Mutable       Changes 
+Immutable  no changes
+
+
+plot() function in R is used to create the line graph.
+
+Syntax: plot(v, type, col, xlab, ylab,col)
+
+Parameters: 
+
+v: This parameter is a contains only the numeric values
+type: This parameter has the following value: 
+“p” : This value is used to draw only the points.
+“l” : This value is used to draw only the lines.
+“o”: This value is used to draw both points and lines
+xlab: This parameter is the label for x axis in the chart.
+ylab: This parameter is the label for y axis in the chart.
+main: This parameter main is the title of the chart.
+col: This parameter is used to give colors to both the points and lines.
+                                Day 5(16-07-24)
+Visualization in R-Ref R File 
+Moments Library -Skewness & Kurtosis
+readr readxlsx to load data 
+Par is used to devide o/p Screen in M * N
+#margin of the grid(mar), 
+#no of rows and columns(mfrow), 
+#whether a border is to be included(bty) 
+#and position of the 
+#labels(las: 1 for horizontal, las: 0 for vertical)
+#bty - box around the plot
+par(mfrow=c(3,3),mar=c(2,2,2,2),las=0,bty="o")
+View () See Data
+Attach ()  Attach data to R
+Detach()   Remove Attached data from R
+Summary() -Descriptive Analysis of Data
+Skewness() Distribution of Data
+Kurtosis() Peakness of Data 
+Visualization
+Boxplot()
+Plot()
+Plot( type="L") Line Chart
+hist()
+Pie(number,Text)
+Scatter.smooth()
+barplot()
+table()
+                                17-10-24(Day6)
+Data Types in R - Vector, List, Matrix, Array, Factor, Data Frame
+
+
+1 List     []  
+List -  can contain many different types of elements inside it like vectors, 
+functions and even another list inside it        
+2 Array    Array(no of values)
+# Array - While matrices are confined to 2 dimensions, arrays can be of any number 
+of dimensions
+3 Vector   c(Values)
+Vector - contains elements of same class
+4 Factor
+Factor - variable which can take certain values(levels) and not any
+
+5 Dataframe Dataframe(Variable1=c(),variable 2=c(),...)
+Value inside the vector is same
+
+6 Matrix - two-dimensional(rows*columns) rectangular data set   M*N 
+ It can be created using a vector input to the matrix function
+The data elements must be of the same type
+All columns in a matrix must have the same type of mode(numeric, character, etc.) 
+ and the same length 
+ Statements
+
+1 If Statement
+# Syntax: 
+if (test_expression) {
+  statement
+  } 
+2  If Else Statement
+# syntax: 
+if (test_expression) {
+  statement1
+} else {
+  statement2
+  }   
+3   Nested If Else Statement
+if ( test_expression1) {
+  statement1
+} else if ( test_expression2) {
+    statement2
+  } else if ( test_expression3) {
+  statement3
+  } else  statement4
+4 ifelse Statement 
+There is an easier way to use if...else statement specifically for vectors in R programming
+# Syntax: ifelse(test_expression,x,y)
+ifelse(contition , true , ifelse(condition , 1 , ifelse(condition , 2 , 3)))   n-1
+
+                       
+                             18-10-24(Day 7)
+# Loops in R
+# While loop
+# Syntax
+while (test_expression) {
+  statement
+}
+
+# Repeat loop
+# Syntax 
+repeat { 
+  commands 
+  if(condition) {
+    break
+  }
+}
+
+# For Loop 
+# Syntax
+for (value in vector) {
+  statements
+}
+
+# Function 
+function_name <- function(arg_1, arg_2, ...) {
+  Function body 
+}
+
+1 Without argument
+2 With argument
+3 Default 
+
+Numerical Data
+
+max()  Maximum
+min()  Minimum
+Sum()  Total
+mean() mean Average 
+mode()   Most occurring value 
+median()  Middle Value
+var()    Varience
+sd()     Standard deviation
+view()   See Table 
+summary()   Detail information of data 
+
+Joins 
+Inner  Common records 
+Left   Left+Common   x=True
+Right  Right+Common  y=True
+Cross Each and every record from both tables Connected with each other  by=null
+Ex   Table 1 =10   Table 2 =5   Total 50 records in Cross join
+Full outer Join Left+Right+Common  All=true
+Merge -Single Common Column Ex Empid
+Append -Table Structure Same   Ex Employee data for 21,22,23,24 
+Ex mt cars Data 
+nrow(mtcars) # no.of rows in mtcars
+row.names(mtcars) # row names 
+ncol(mtcars) # number of columns 
+colnames(mtcars) # column names in mtcars 
+names(mtcars) 
+dim(mtcars) # dimensions ( rows X columns )  observation (Rows)   Variable(Column)
+dimnames(mtcars) # Dimension names ( row names and column names )
+
+                             21-10-24(Day 8)
+Basics of Python Programming
+Download Link
+https://www.anaconda.com/download/
+Steps to open Jupyter notebook
+
+1 Anaconda Navigator
+
+2 Launch Jupyter notebook
+File Extension  
+.jpynb
+.py
+Anaconda -Repository
+IDE(Integrated Database Environment)
+    Jupyter Notebook               Google Colab 
+1   Installation                  No Installation
+2   Consume Memory                 No Memory
+3   Offline                        Internet Connection required
+4   save in System                Not Saved in System 
+ 
+Libraries in Python
+Set of Function
+1 Pandas -For data manipulations(Read write,Shape ,Info,datatypes,index,Group by,Sorting ,Column..)
+2 NumPy  -For  numeric Operation(Max,Min,Total,Varience,Standard deviation)
+3 Matplotlib -data visualization Customize 
+4 Seaborn Beautiful visualization 
+5 Sklearn -Machine learning Models
+6 Tenserflow-image and Video processing
+7 Keras image and Video processing
+8 Picle -Sterilization and Sterilization of Data
+
+!pip install Pandas -only first time
+Import pandas as pd
+Data_Name=pd.read_csv(r'')-any location
+Data_Name=pd.read_csv('Dataname.csv')-Jupiter notebook home page
+Data_Name-All Column and Rows
+Data_Name.head()-top 5
+Data_Name.tail()-bottom 5
+type(data_Name) -Check Data Structure
+Data_Name.shape  -Shape of data-No of rows and Column(Rows ,Column)
+Data_Name.info()-Data types -summary
+Data_Name.iloc[Row,Column]-See specific Rows and Column
+
+Pandas Data type 
+int32/int64  int
+float32/float64 Float 
+object     Text/String
+datetime   Date and Time 
+                             
+# print command is use to see O/p Result 
+#' -Single String
+#"" - 1  Sentence
+#""" -Big Sentence or paragraph
+# for Comments 
+# Python is Case sensitive 
+# Green -Inbuild function and Black user 
+                        22-10-24(Day 9)
+Data structure
+List 
+Tuple
+Set
+Dictionary
+Key:Value 
+Indexing and Slicing 
+# Slicing & Indexing -Indexing Start from 0 Reverse indexing Starts from -1
+# str[including : Excluding] Ex  first 2 Character    str[0,2]
+# :: Reverse of String
+# List and Dictionary are Mutable(Change) 
+# Tuple and Sets are Immutable (Not Change)
+-Repitition
+   Number will work with List Tuple Str  as Repeat Function              
+    No* List[]   
+-Concatinate  work only with same data Structure
+  (List1 +Tuple1) -invalid 
+len()-lenghth of String ,List/Tuple
+Only for Numerical Data
+Max() Maximum Value 
+Min() Minimum Value 
+
+Data cleaning Function
+upper 
+lower
+capitalize
+strip
+reverse
+len
+match -first value Match True 
+sub -Substitute replace current string with new String  Ex United States -United Kingdom
+input -user can enter value using input Box 
+
+Operator
+== compare
+!= not equal to
+>  greater than
+<  less than
+%  mod
+/  quotient
+
+
+
+                                  
+                                   23-10-24(Day 10)
+Set {}
+UNION |  for Full Join all members from both Set
+Intersection &  Inner Join  Only Common Values
+Difference -  Left Anti(only left values without Common)
+subset part of Set 
+issubset - Part of Set or not True False
+
+Function 
+Create Function  only one   Age ()
+Call Function multiple time  Age(DOB)
+
+Conditional Statements & Loop
+if  only True 
+if else  True and False 
+elif     Nested if 
+Loops    
+while 
+For
+Lambda function 
+without Def Function Lambda function gives same result 
+Ex lst.sort(key = lambda x: len(x))- Sorted on the basis of no of Character 
+                                24-10-24(Day 11)
+Ref Python File 4 Jupyter Notebook
+Load Data
+!pip  install pandas
+!pip install numpy
+
+import pandas as pd
+import numpy as np
+
+1 df=pd.read_csv('path.csv')
+2 df.head() top 5 records 
+3 df.tail() bottom 5 records
+4 df.shape  (no of Rows,No of Columns)
+5 df.isnull().sum() to check  null values
+6 df.describe - details of data
+7 df.type     data type
+8 df.iloc[Row.Column]-Index no of Row and Column
+  df.loc[Row.Column]-no of Row and Column Name 
+9 Find Duplicate value
+df.duplicated()
+df.drop_duplicates()
+10  df.dtypes
+data type for each Column
+HW 
+EDA for Flight and Sales
+                            25-10-24(Day 12)
+Visualization
+Ref Python 5 file 
+EDA for Sales & Salaries Data
+                            28-10-24(Day13)
+Data  Cleaning (EDA)
+Ref EDA-28-10-24 Pythonn File Data_Clean CSV File 
+
+Drop of Na Values
+1-5%      Drop Row
+6-40%     Replace (Mean-no outliers ,Median-outliers-Number ,Mode-Object
+50%       Drop Column
+
+# Calculate the percentage  of missing value in each column
+for i in df.isna().sum():
+    print(round(i/len(df)*100,2),'%')
+
+Mean=Median     Normal Distribution
+Mean> Meadian +/Right Skewness
+Mean<Meadian  -/Left  Skewness
+
+df["Column Name"]=df["Column Name"].astype(int)# Covert object Data type to int
+
+
+# Drop column Year-Varience=0
+
+# Permanently  Drop column from Data 
+df.drop(columns=['Column Name'],inplace=True)
+Or 
+df=df.drop(columns=['Column Name'])
+
+
+# Rename Column 
+df.rename(columns={'Column1':'NewColumn1','Column2':'NewColumn2'},inplace=True)
+
+plt.tight_layout()# To Avoid Overlapping of Chart Title
+ 
+
+Box plot,Heatmap,Hist -Check outliers in data
+                        29-10-24(Day 14)
+
+                               # 3RRR(Replace -Remove-Retain)-Null Values
+Replace (Less Data) 
+Numerical  mean Median (Capping)
+Text    mode 
+Remove (More Data-remove Row Remore Column
+Retain  keep outliers Bank Hospital 
+
+Transformation(0,1)
+Dummy Variable 
+One hot encoder
+-1..........0.................+1
+High       Low               High
+
+Graded interpretation : 
+r 0.1-0.3 = weak
+0.4-0.7 = moderate
+0.8-1.0=strong correlation
+
+Transformation
+EDA Steps
+1 Import Libraries
+2 Load Data
+3 Data Understanding 
+  -Duplicate
+  -Shape 
+  -Missing Value
+  -Datatype
+  -Describe
+  -Outliers
+4 Descriptive Statistics 
+5 Visualization
+  Boxplot,Histogarm,Scatter Chart-Outliers
+6 Treat outliers and Null Values
+7 Convert Object to int
+  get_dummies 
+8 Correlation  Heat map
+9 Normalization [0 ,1]
+  Standardize data (0 mean, 1 stdev)
+MinMax Scalar (Min=0,Max=1)
+#!pip install scikit-learn    First time
+# 1 Reposatory -Anaconda 
+# 2 Library-Sklearn 
+# 3 Module-preprocessing 
+# 4 Classes StandardScaler,MinMaxScaler
+
+                            30-10-24(Day 15)
+Hypothesis Testing
+
+Define Hypothesis
+1 H0 >Value Ha <value True False  
+2 Z test
+3 2 Tail
+4 alpha=0.05
+5 p value  1.96/2  0.98
+6 Average weight of People in city A is 72 because P value is greater than alpha
+
+          Z Test                                t Test 
+Population SD is Given                    Population SD is not Given 
+
+ 1 Sample                               1 Tailed  > < >= <= 
+ 2 Sample                               2 Tailed = not equal to 
+                            04-11-24(Day16)
+
+
+1 sample
+a-T test   b- Proportion test
+2 Sample
+a-T test   b- Proportion test
+3 Anova
+Sample T1 T2 T3 T4....
+4 Chi Test 
+5 Regression
+1 Sample t test
+
+from scipy.stats import ttest_1samp
+#tscore,pvalue =ttest_1samp(data, population mean)
+
+2 sample t test
+from scipy.stats import ttest_ind  (2 sample)
+
+## Paired t test(dependent)
+
+from scipy.stats import ttest_rel
+
+                      05-11-24(Day 17)
+Machine Learning (Future)
+In  order to make the statement about Future
+Model -Set of Algorithoms
+                              Machine Learning
+     Supervised                                                                     Unsupervised  
+    (Specified O/P)                                                               (No specified O/P)
+1 Regression                                            2 Classification
+(Y is Continuous)                                         (Y is Discrete)
+Linear Regression                                         Logistic Regression
+a Simple Linear Regression(SLR) Y=mX+c Straight Line  a Simple Logistic Regression Y=BX+E
+b Multi linear Regression(MLR) Y=m1X1+m2X2.......+c   b Multi Logistic Regression  Y=B1X1+B2X2.....+E
+
+
+ Assumption(Parametric Model )
+1 The data need to be Linear Proportion 
+  x directly Y  Proportion 
+  X inversely Y  Proportion 
+(Scatter Chart, Correlation)
+2  Homo Scarcity (Similar Variance)
+3  NO Multicollinearity(Same Column information Should not be there) drop dependent Column
+Ex  Weight in kg Weight in gm  -Drop any one Column
+4 No auto regress (O/p should  not change with time)
+5 Zero residual Mean
+6 Continuous 1 I/P 1 O/P
+Training Data
+
+Known parameter       X Y 
+Unknown Parameter     M C 
+Y=mx+C
+
+Data Prediction 
+
+Known parameter      m c x
+Unknown Parameter     Y 
+Y=mx+C
+
+ Assumption-(Parametric Model )-Supervised Machine Learning -Regression  ,Classification
+
+ No Assumption-( Non Parametric Model )-UnSupervised Machine Learning -Clustering
+
+                             06-11-24(Day 18)
+Simple Linear Regression for
+1  Newspaper data  Sunday Vs Daily
+2  Waist Circumference Vs Adipose Tissue Data 
+Ref Python File Simple Linear Regression 
+& SLR_ATWC
+                              07-11-24(Day23)
+MLR Ref Python file
+                              08-11-24(Day24)
+    Machine Learning
+         |
+Supervied Machine Learning 
+         |
+Classification(Discrete)
+         |
+Logistic Regression 
+ 
+
+Confusion Matrix
+                        Actual Value
+                        P        N
+Predicted Value   T    TP       TN
+                
+                  F    FP       FN
+Recall/Sensitivity =TP/ TP+FN
+Precision =TP/  TP+FP
+Specificity =TN/  TN+FN
+F Score   = 2*Recall*Precision /Recall+Precision 
+Assumption
+1 O/p is Discrete
+
+                            11-11-24(Day25)
+Clustering (Unspervised Machine Learning)
+1 Hierarchical 
+2 K Mean
+3 DBSCAN
+Hierarchical Clustering  
+-small Data,find the Number of Clusters
+-Agglomerative Clustering  
+-dendrogram
+Distance between Clusters
+1 Single Linkage(Nearest Neighbour)
+2 Complete Linkage(Farthest Neighbour)
+3 Average Linkage(avearage of all the distance between members of both the cluster)
+4 Centroid Linkage
+Euclidean Distance 
+The Euclidean distance formula says:
+d = √[ (x2– x1)2 + (y2– y1)2]               
+
+
+
+                            12-11-24(Day25)
+Python Code for Hierchical ,Kmean Clustering
+K mean Clustering
+-Elbow Curve We will deside K Value
+Range 1 -11
+Mean of Each cluster is Calculated 
+
+                           13-11-24(Day26)
+DBSCAN-Outlaiers Detection 
+Density-Based Spatial Clustering of Applications with Noise
+1 Epsilon(radius of Circle)
+2 Minimum Sample =3
+3 Core Point  Centre of Circle
+4 Border Point   Points on Radius
+5 Noise Point  Outlaiers
+-No need to decide No of Cluster
+-Randaom Shape
+-Handle the Data with outlaiers
+Difference Between Kmean DBSCAN
+                            KMean               DBSCAN
+1 Cluster Shape        Spherical,Convex         Random/Arbitory Shape
+2 No of Cluster        Specified by K           Not Specified
+3 Dataset              Large Data               Small Data
+4 Outlaiers            No                       Yes
+5 Parameter            K Value                  Epsilon,Min_Points=3 
+                    14-11-24(Day27)
+Association Rule 
+Lift ratio shows how effective the rule is in finding consequents vs. random (useful if finding particular consequents is important)
+Lift ratio= confidence/(benchmark confidence)
+
+Benchmark assumes independence between antecedent and consequence:
+
+P(antecedent & consequent) = P(antecedent) x P(consequent)
+Benchmark confidence:
+P(C|A) = P(C&A) / P(A) = P(C) x P(A) / P(A) = P(C)
+=
+# transactions with consequent item sets
+# transactions in database
+
+Confidence shows the rate at which consequents will be found (useful in learning costs of promotion)
+
+Support measures overall impact (% transactions affected)
+antecedent - consequent(Support,Confidence)
+O/p        I/P(Support,Confidence)
+
+* !pip install  mlxtend-Only one time 
+From mlxtend import.frequent_patterns import apriori,association_rules
+from mlxtend.preprocessing import TransactionEncoder
+                      15-11-24(Day 28)
+Recommendation System
+1 Collabrative    Recommendation  Two user with same Similarity Score 
+2 Content Based  Recommendation  One User with same Author Recommendation 
+Cosine Similaries Cos9A,B)=A.B/|A|*|B|
+High Similarity Score highly Recommended
+Low Similarity  Score Less recommended 
+Code Refer Recommendation File 
+                      18-11-24(Day 29)
+EDA 2
+Encoding Texhniques 
+1 Onehot Encoder 
+2 Label Encoder
+3 Get Dummies
+If the target column is categoric, we use the sklearn.LabelEncoder​ sort in A-Z  1column All the Unique code in Single Column
+If the feature column is categoric, we use the sklearn.OneHotEncoder    Depends on no of features  in categoric column(n feature =n Column)-Continuous O/P
+Get Dummies-Convert Categorical column to Dummy Variables 
+Ex Male 1 Female 0 O/p is in the Form of 0 and 1 
+
+
+Isolation Forest for outlier Detection Unsurvised Learning  anamoaly Score
+
+                                     19-11-24(Day30)
+Decision Tree (Classifier & Regrssion)
+ 1 C5.0  Classifier O/p is Categorical Entropy Informaion Gain
+2 Cart Regression )/p is Numerical  Gini  Root Mean Square Value 
+Main/Root Node -Decision Node- Leaf node 
+information Gain=Entropy(S1)-Entropy(S2) S1 -Actual S2 -Predicted
+information Gain=Entropy(before)-Entropy(after)
+Entropy=summation -Pi (log2 Pi)
+Criteria =gini  CART Regressor 
+Criteria=entropy  C5.0 Classifier
+
+                      21-11-24(Day31)
+Random Forest
+1  Classifier O/p -Categorical
+2 Regressor  o/p   Numerical
+
+
+Feature Selection 
+RFE(Recursive Feature Elimination)-reduce Column/Feature
+More Accuracy
+Curse of Dimensionality 
+Less Time 
+low Computational Cost
+
+N +1 Model created
+
+
+X1 X2 X3 X4 Y   acc 90
+x1 X2 X3 Y   Acc 80
+xi X2 X4      Axc 60
+x2 X3 X4     Acc 70
+
+Tree Based Method 
+Entropy -Information Gain
+Gini 
+
+                      
+Model Validation Technique
+Train  Text Split 
+20 test 80 train
+
+Kfold
+average of all fold 
+Leave one out (small dataset like till 1000records )
+
+0 or 100% accuracy 
+
+Grid Search CV K=5
+                                 22-11-24(Day 32)
+
+
+Ensemble Techniques(Learner -Models)
+Take multiple weak learner to make one strong learner
+
+1 Bagging 
+  2 Homogenous weak Learner 
+M1 M2 M3 same Algorithem Like Desicion Tree Regressor
+independent to each other
+2 Boosting 
+1best Approach learn Sequentialy
+depends on  each other
+M1 M2 M3 same Algorithem Like Desicion Tree Regressor
+Homogenous weak Learner
+3 Stacking 
+Hetrogenious weak Learner (Differnt Algorithem)
+M1 M2 M3 All independent different learner
+Bagging
+Random Forest (multiple Decision Tree)
+n estimators -100 /150 -hyperpameter -no of desicion Tree depends on no of Column
+-- Base Algorithem is Desicion Tree
+--Random Forest is the most common Algorithem
+
+Bootstamp Aggregation (67 % ramdomly data selection for each model)
+Sampling without replacement delete after selection 
+Sampling with replacement    not deleting 
+Row Sampling 
+Feature Sampling
+Regresion -Average
+Classification 
+--no of feature for each decision tree =squareroot N 
+Where N is total no of Column 
+Decision Tree prone overfitting
+Randomforest Row &  feature sampling 
+No need to replace automatical replace with mode for Text and Mean for number
+
+Gradient Boosting
+-Used for Regression and Classification 
+-Sequential Model
+-Base model is Decision Tree
+-M1 M2 M3 Sequential Algorithm Mi is Average given to 2 -3.....
+-Residual/Error  is target Column for M2 
+                   25-11-24(Day 33)
+Feature Selection 
+PCA -(Principle Component Analysis)
+Reduce the Dimension
+
+Overfitting 
+Training acccuracy More Testing Less 
+Low Bias High Varience 
+Underfitting
+Training acccuracy low Testing more 
+High  Bias Low Varience 
+Accurate Model 
+Low Bias Low Varience 
+Training Accuraccy =~ Test Accuracy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
